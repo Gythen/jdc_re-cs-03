@@ -424,7 +424,7 @@ new file mode 100644
 index 0000000000..16d465448d
 --- /dev/null
 +++ b/target/linux/qualcommax/dts/ipq5018-re-cs-03.dts
-@@ -0,0 +1,379 @@
+@@ -0,0 +1,371 @@
 +/dts-v1/;
 +
 +#include "ipq5018.dtsi"
@@ -796,7 +796,6 @@ index 0000000000..16d465448d
 +	qcom,bdf-addr = <0x4d100000>;
 +	qcom,m3-dump-addr = <0x4df00000>;
 +};
-+
 diff --git a/target/linux/qualcommax/image/ipq50xx.mk b/target/linux/qualcommax/image/ipq50xx.mk
 index 6a6a50d6f7..f2b9ce69d7 100644
 --- a/target/linux/qualcommax/image/ipq50xx.mk
