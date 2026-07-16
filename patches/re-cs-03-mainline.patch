@@ -640,8 +640,6 @@ index 0000000000..16d465448d
 + &uniphy0 {
 +	status = "okay";
 +
-+	switch_mac_mode = <MAC_MODE_SGMII_CHANNEL0>;
-+
 + 	assigned-clocks = <&uniphy0 UNIPHY_CLK_REF>;
 + 	assigned-clock-rates = <UNIPHY_REFCLK_50MHZ>;
 +};
@@ -649,17 +647,12 @@ index 0000000000..16d465448d
 +&gmac0 {
 +	label = "wan";
 +	status = "okay";
-+ 	nvmem-cells = <&macaddr_appsblenv_ethaddr 2>;
-+ 	nvmem-cell-names = "mac-address";
 +};
 +
 +// MAC1 ---SGMII---> QCA8337 SerDes
 +&gmac1 {
 +	status = "okay";
 + 	phy-mode = "sgmii";
-+ 
-+ 	nvmem-cells = <&macaddr_appsblenv_ethaddr 0>;
-+ 	nvmem-cell-names = "mac-address";
 +
 +	fixed-link {
 +		speed = <1000>;
